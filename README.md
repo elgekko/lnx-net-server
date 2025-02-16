@@ -18,6 +18,9 @@ in the range 1-65535. Example: EchoServer 50000
 ### Build selfcontained
 
 dotnet publish -c Release -r linux-x64 --self-contained true
+
+or
+
 dotnet publish -c Release -r linux-x64 -p:PublishAot=true
 
 # testclient.py
