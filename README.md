@@ -9,11 +9,11 @@ in the range 1-65535. Example: EchoServer 50000
 
 ### Build
 
-/snap/bin/dotnet build /work/lnx-net-server/EchoServer.sln /property:GenerateFullPaths=true /consoleloggerparameters:NoSummary -c Release
+dotnet build /work/lnx-net-server/EchoServer.sln /property:GenerateFullPaths=true /consoleloggerparameters:NoSummary -c Release
 
 ### Start
 
-/snap/dotnet-sdk/255/dotnet /work/lnx-net-server/bin/Release/net8.0/EchoServer.dll 50000
+dotnet /work/lnx-net-server/bin/Release/net8.0/EchoServer.dll 50000
 
 ### Build selfcontained
 
