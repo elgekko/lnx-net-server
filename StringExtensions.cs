@@ -5,18 +5,20 @@ namespace EchoServer
 {
     public static class StringExtensions
     {
-        public static string ToControlCodeString(this string s)
+        public static string ToControlCodeString(this string input)
         {
-            var sb = new StringBuilder();
-
-            foreach (char c in s)
+            StringBuilder sb = new StringBuilder();
+            foreach (char c in input)
             {
                 if (char.IsControl(c))
-                    sb.AppendFormat("\\x{0:X2}", Convert.ToInt32(c));
+                {
+                    sb.Append($"[{(int)c}]");
+                }
                 else
+                {
                     sb.Append(c);
+                }
             }
-
             return sb.ToString();
         }
     }
