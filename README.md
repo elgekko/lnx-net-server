@@ -31,3 +31,13 @@ This is a test client app for server, written in python. Sends and receives samp
 
 ```python testclient.py```
 
+
+# Development environment install on Linux
+```
+snap install dotnet-sdk --classic
+snap install code --classic
+ln -s /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet
+cd /lnx-net-server
+code .
+```
+After IDE start install suggested plugins.
